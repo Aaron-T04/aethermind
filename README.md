@@ -1,38 +1,38 @@
-# Open Agent Builder
+# 🧠 AetherMind – Autonomous AI Workflow Builder
+
+**Team Aether | AI Genesis Hackathon 2025**
 
 <p align="center">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGNoY25xY2ptZTZtcDN6czBmdXJ2dnpkdWVjcXlqNXNhdjgyZXpkaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tWtopK29eXAbvaDpi5/giphy.gif" alt="Demo" width="100%" />
+  <strong>Turn prompts into end-to-end autonomous agent pipelines</strong><br>
+  Powered by Gemini 1.5 Flash and AI/ML API
 </p>
 
 <div align="center">
 
-**Build, test, and deploy AI agent workflows with a visual no-code interface**
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Built for AI Genesis Hackathon](https://img.shields.io/badge/Hackathon-AI%20Genesis%202025-blue)](https://lablab.ai)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![Firecrawl](https://img.shields.io/badge/Powered%20by-Firecrawl-orange)](https://firecrawl.dev)
-
-[Documentation](#documentation) • [Examples](#example-workflows)
+[Documentation](#documentation) • [Quick Start](#quick-start) • [Demo](#demo)
 
 </div>
 
 ---
 
-## What is Open Agent Builder?
+## 🎯 What is AetherMind?
 
-Open Agent Builder is a visual workflow builder for creating AI agent pipelines powered by [Firecrawl](https://firecrawl.dev). Design complex agent workflows with a drag-and-drop interface, then execute them with real-time streaming updates.
+**AetherMind** is a visual, no-code AI workflow builder that transforms simple prompts into autonomous agent pipelines. Built specifically for the AI Genesis Hackathon 2025, it demonstrates how **Google Gemini 1.5 Flash** and **AI/ML API** can work together to create intelligent, multi-agent workflows.
 
-**Perfect for:**
-- Web scraping and data extraction workflows
-- Multi-step AI agent pipelines
-- Automated research and content generation
-- Data transformation and analysis
-- Web automation with human-in-the-loop approvals
+### Perfect for:
 
-> **Note:** This project is actively under development. Some features are still in progress and we welcome contributions and PRs!
+- **Research & Analysis** – Automated research workflows with web scraping and AI analysis
+- **Multi-Agent Orchestration** – Different LLMs for different tasks (Gemini for reasoning, AI/ML API for summaries)
+- **Data Extraction** – Web scraping and structured data extraction
+- **Content Generation** – Automated content creation pipelines
+- **Business Intelligence** – Transform raw data into actionable insights
 
 ---
 
-## Key Features
+## ✨ Key Features
 
 ### Visual Workflow Builder
 - **Drag-and-drop interface** for building agent workflows
@@ -41,221 +41,121 @@ Open Agent Builder is a visual workflow builder for creating AI agent pipelines 
 - **Template library** with pre-built workflows
 - **MCP protocol support** for extensible tool integration
 
-### Powered by Firecrawl
-- **Native Firecrawl integration** for web scraping and searching
+### Powered by Gemini & AI/ML API
+- **Gemini 1.5 Flash** – Primary LLM for reasoning, planning, and analysis
+- **AI/ML API** – Sub-agents using Llama 3.1 70B, Flux, and more
+- **Multi-agent orchestration** – Different models for different tasks
+- **Cost-optimized** – Use the right model for each job
 
 ### Enterprise Features
 - **LangGraph execution engine** for reliable state management
-- **Clerk authentication** for secure multi-user access
 - **Convex database** for persistent storage
-- **API endpoints** for programmatic execution
-- **Human-in-the-loop** approvals for sensitive operations
+- **Real-time updates** with streaming execution
+- **Structured JSON output** for auditability
+- **Firecrawl integration** for web scraping and research
 
 ---
 
-## Tech Stack
+## 🏗️ Tech Stack
 
-| Technology | Purpose |
-|-----------|---------|
-| **[Firecrawl](https://firecrawl.dev)** | Web scraping API for converting websites into LLM-ready data |
-| **[Next.js 16 (canary)](https://nextjs.org/)** | React framework with App Router for frontend and API routes |
-| **[TypeScript](https://www.typescriptlang.org/)** | Type-safe development across the stack |
-| **[LangGraph](https://github.com/langchain-ai/langgraph)** | Workflow orchestration engine with state management, conditional routing, and human-in-the-loop support |
-| **[Convex](https://convex.dev)** | Real-time database with automatic reactivity for workflows, executions, and user data |
-| **[Clerk](https://clerk.com)** | Authentication and user management with JWT integration |
-| **[Tailwind CSS](https://tailwindcss.com/)** | Utility-first CSS framework for responsive UI |
-| **[React Flow](https://reactflow.dev/)** | Visual workflow builder canvas with drag-and-drop nodes |
-| **[Anthropic](https://www.anthropic.com/)** | Claude AI integration with native MCP support (Claude Haiku 4.5 & Sonnet 4.5) |
-| **[OpenAI](https://platform.openai.com/)** | gpt-5 integration (MCP support coming soon) |
-| **[Groq](https://groq.com/)** | Fast inference for open models (MCP support coming soon) |
-| **[E2B](https://e2b.dev)** | Sandboxed code execution for secure transform nodes |
-| **[Vercel](https://vercel.com)** | Deployment platform with edge functions |
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | Next.js 14 (App Router) + Tailwind + shadcn/ui |
+| **Workflow Engine** | LangGraph (workflow orchestration) |
+| **Primary LLM** | **Google Gemini 1.5 Flash** (reasoning, planning, analysis) |
+| **Sub-Agents** | **AI/ML API** (Llama 3.1 70B, Llama 3.1 8B, Flux 1.1 Pro) |
+| **Web Scraping** | **Firecrawl** (MCP integration) |
+| **Database** | Convex (real-time state management) |
+| **Visual Canvas** | React Flow (drag-and-drop nodes) |
+| **Deployment** | Vercel (frontend) + Convex Cloud (backend) |
 
 ---
 
-## Prerequisites
+## 🚀 Quick Start
 
-Before you begin, you'll need:
+### Prerequisites
 
-1. **Node.js 18+** installed on your machine
-2. **Firecrawl API key** (Required for web scraping) - [Get one here](https://firecrawl.dev)
-3. **Convex account** - [Sign up free](https://convex.dev)
-4. **Clerk account** - [Sign up free](https://clerk.com)
+- Node.js 18+ installed
+- **Gemini API key** ([Get one here](https://aistudio.google.com/app/apikey))
+- **AI/ML API key** ([Get one here](https://aimlapi.com) - Use promo: `2GENAIDUB` for $20 credit)
+- Firecrawl API key ([Get one here](https://firecrawl.dev))
+- Convex account ([Sign up free](https://convex.dev))
 
-> **Note:** LLM API keys can be added directly in the UI via Settings → API Keys after setup. For MCP tool support, Anthropic Claude (Haiku 4.5 or Sonnet 4.5) is currently recommended as the default option.
+### Installation
 
----
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Aaron-T04/AetherMind.git
+   cd AetherMind
+   npm install
+   ```
 
-## Installation & Setup
+2. **Set up Convex (Database):**
+   ```bash
+   npm install -g convex
+   npx convex dev
+   ```
+   This will generate `NEXT_PUBLIC_CONVEX_URL` in your `.env.local`
 
-### 1. Clone the Repository
+3. **Configure environment variables:**
+   ```bash
+   cp env.local.template .env.local
+   ```
+   
+   Edit `.env.local` with your keys:
+   ```bash
+   # Required
+   NEXT_PUBLIC_CONVEX_URL=<from-convex>
+   FIRECRAWL_API_KEY=fc-...
+   
+   # Hackathon Required
+   GEMINI_API_KEY=your-gemini-key
+   AIMLAPI_API_KEY=your-aimlapi-key
+   ```
 
-```bash
-git clone https://github.com/firecrawl/open-agent-builder.git
-cd open-agent-builder
-npm install
-```
+4. **Run the application:**
+   ```bash
+   # Terminal 1: Convex
+   npx convex dev
+   
+   # Terminal 2: Next.js
+   npm run dev
+   ```
 
-### 2. Set Up Convex (Database)
-
-Convex handles all workflow and execution data persistence.
-
-```bash
-# Install Convex CLI globally
-npm install -g convex
-
-# Initialize Convex project
-npx convex dev
-```
-
-This will:
-- Open your browser to create/link a Convex project
-- Generate a `NEXT_PUBLIC_CONVEX_URL` in your `.env.local`
-- Start the Convex development server
-
-Keep the Convex dev server running in a separate terminal.
-
-### 3. Set Up Clerk (Authentication)
-
-Clerk provides secure user authentication and management.
-
-1. Go to [clerk.com](https://clerk.com) and create a new application
-2. In your Clerk dashboard:
-   - Go to **API Keys**
-   - Copy your keys
-3. Go to **JWT Templates** → **Convex**:
-   - Click "Apply"
-   - Copy the issuer URL
-
-Add to your `.env.local`:
-
-```bash
-# Clerk Authentication
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
-CLERK_SECRET_KEY=sk_test_...
-
-# Clerk + Convex Integration
-CLERK_JWT_ISSUER_DOMAIN=https://your-clerk-domain.clerk.accounts.dev
-```
-
-### 4. Configure Convex Authentication
-
-Edit `convex/auth.config.ts` and update the domain:
-
-```typescript
-export default {
-  providers: [
-    {
-      domain: "https://your-clerk-domain.clerk.accounts.dev", // Your Clerk issuer URL
-      applicationID: "convex",
-    },
-  ],
-};
-```
-
-Then push the auth config to Convex:
-
-```bash
-npx convex dev
-```
-
-### 5. Set Up Firecrawl (Required)
-
-**Firecrawl is the core web scraping engine** that powers most workflows.
-
-1. Get your API key at [firecrawl.dev](https://firecrawl.dev)
-2. Add to `.env.local`:
-
-```bash
-# Firecrawl API (REQUIRED)
-FIRECRAWL_API_KEY=fc-...
-```
-
-> **Note:** Users can also add their own Firecrawl keys in Settings → API Keys, but having a default key in `.env.local` enables the template workflows.
-
-### 6. Optional: Configure Default LLM Provider
-
-While users can add their own LLM API keys through the UI (Settings → API Keys), you can optionally set a default provider in `.env.local`:
-
-```bash
-# Optional: Choose one as default
-
-# Anthropic Claude (Recommended - Native MCP support with Haiku 4.5 & Sonnet 4.5)
-ANTHROPIC_API_KEY=sk-ant-...
-
-# OpenAI GPT-5 (MCP support coming soon)
-OPENAI_API_KEY=sk-...
-
-# Groq (MCP support coming soon)
-GROQ_API_KEY=gsk_...
-```
-
-> **Important:** For workflows using MCP tools (like Firecrawl integration), Anthropic Claude is currently the recommended provider as it has native MCP support. OpenAI and Groq MCP support is coming soon.
-
-### 7. Optional: E2B Code Interpreter
-
-For advanced transform nodes with sandboxed code execution:
-
-```bash
-# E2B Code Interpreter (Optional)
-E2B_API_KEY=e2b_...
-```
-
-Get your key at [e2b.dev](https://e2b.dev)
+5. **Visit:** `http://localhost:3000`
 
 ---
 
-## Running the Application
+## 📋 Default Workflow Template
 
-### Development Mode
+**AetherMind: Research → Analysis → Summary**
 
-```bash
-# Terminal 1: Convex dev server
-npx convex dev
+This template demonstrates the core hackathon workflow:
 
-# Terminal 2: Next.js dev server
-npm run dev
+```
+Start → Firecrawl Search → Gemini Analysis → AI/ML API Summary → Transform JSON → End
 ```
 
-Or run both with one command:
+**What it does:**
+1. **Research** – Uses Firecrawl to search the web for your topic
+2. **Analysis** – Gemini 1.5 Flash analyzes findings and extracts insights
+3. **Summary** – AI/ML API (Llama 3.1 70B) creates concise executive summary
+4. **Output** – Structured JSON report for auditability
 
-```bash
-npm run dev:all
-```
-
-Visit [http://localhost:3000](http://localhost:3000)
-
-### Production Build
-
-```bash
-npm run build
-npm start
-```
+**Try it:**
+- Click "New Workflow"
+- Select "AetherMind: Research → Analysis → Summary"
+- Enter a research topic (e.g., "Latest AI trends in 2025")
+- Click "Run" and watch the autonomous pipeline execute
 
 ---
 
-## Quick Start Guide
-
-### Your First Workflow
-
-1. **Sign Up/Login** at `http://localhost:3000`
-2. **Add your LLM API key** in Settings → API Keys
-   - For MCP tool support: Use Anthropic Claude (Haiku 4.5 or Sonnet 4.5)
-   - For basic workflows: OpenAI or Groq also work
-3. **Click "New Workflow"** or select a template
-4. **Try the "Simple Web Scraper" template:**
-   - Pre-configured to scrape any website
-   - Uses Firecrawl for extraction
-   - AI agent summarizes the content
-5. **Click "Run"** and enter a URL
-6. **Watch real-time execution** with streaming updates
-
-### Understanding Node Types
+## 🎨 Understanding Node Types
 
 | Node Type | Purpose | Example Use |
 |-----------|---------|-------------|
 | **Start** | Workflow entry point | Define input variables |
-| **Agent** | AI reasoning with LLMs | Analyze data, make decisions |
+| **Agent** | AI reasoning with LLMs | Analyze data, make decisions (Gemini/AI/ML API) |
 | **MCP Tool** | External tool calls | Firecrawl scraping, APIs |
 | **Transform** | Data manipulation | Parse JSON, filter arrays |
 | **If/Else** | Conditional logic | Route based on conditions |
@@ -265,199 +165,129 @@ npm start
 
 ---
 
-## MCP Tool Support
+## 🔧 Configuration
 
-### Current Support
-**Anthropic Claude** - Full native MCP support
-- Claude Sonnet 4.5 (Recommended)
-- Claude Haiku 4.5
+### Adding API Keys
 
-Anthropic's MCP implementation provides MCP support, other providers are currently in progress.
+API keys can be added in two ways:
 
-### Coming Soon
-- **OpenAI** - MCP support in development
-- **Gemini** - MCP support in development
-- **Open Router** - coming soon...
+1. **Environment Variables** (`.env.local`):
+   ```bash
+   GEMINI_API_KEY=your-key
+   AIMLAPI_API_KEY=your-key
+   FIRECRAWL_API_KEY=your-key
+   ```
 
-### Using MCP Tools
-
-MCP tools enable agents to interact with external services like Firecrawl:
-
-1. Add an **Agent** node to your workflow
-2. In the node settings, select **MCP Tools**
-3. Choose **Firecrawl** or add a custom MCP server
-4. The agent can now call Firecrawl tools like `scrape`, `search`, `crawl`
-
-**Example workflow with MCP:**
-```
-Start → Agent (with Firecrawl MCP) → End
-```
-
-The agent can intelligently decide when to scrape pages, search the web, or crawl sites based on your instructions.
-
----
-
-## Example Workflows
-
-### 1. Simple Web Scraper
-**What it does:** Scrape any website and get an AI summary
-
-**Nodes:** Start → Firecrawl Scrape → Agent Summary → End
-
-**Try it:**
-```bash
-Input: https://firecrawl.dev
-Output: "Firecrawl is a web scraping API that converts websites into LLM-ready markdown..."
-```
-
-### 2. Multi-Page Research
-**What it does:** Search web, scrape top results, synthesize findings
-
-**Nodes:** Start → Firecrawl Search → Loop (Scrape Each) → Agent Synthesis → End
-
-### 3. Competitive Analysis
-**What it does:** Research companies, extract structured data, generate report
-
-**Nodes:** Start → Parse Companies → Loop (Research + Extract) → Approval → Export → End
-
-**Features used:**
-- Firecrawl web search
-- Structured JSON extraction
-- While loops for iteration
-- Human approval gates
-- Conditional routing
-
-### 4. Price Monitoring
-**What it does:** Track product prices across multiple sites
-
-**Nodes:** Start → Loop (Scrape + Extract Price) → Compare → Notify → End
-
----
-
-## Configuration
-
-### User-Level API Keys
-
-Users can add their own API keys via **Settings → API Keys**:
-
-- **LLM Providers:** Anthropic (Recommended for MCP), OpenAI, Groq (Required - add at least one)
-- **Firecrawl:** Personal API key (Optional - falls back to environment variable)
-- **Custom MCP Servers:** Authentication tokens
-
-This allows:
-- Each user to use their own API quotas
-- Fallback to environment variables if not set
-- Easy key rotation and management
+2. **UI Settings** (coming soon):
+   - Go to Settings → API Keys
+   - Add your keys directly in the interface
 
 ### MCP Server Registry
 
-Add custom MCP servers in **Settings → MCP Registry**:
-
-1. Click "Add MCP Server"
-2. Enter server URL and authentication
-3. Test connection to discover available tools
-4. Use in Agent nodes by selecting from MCP tools dropdown
-
-**Supported MCP Servers:**
+Add custom MCP servers in Settings → MCP Registry:
 - Firecrawl (built-in)
 - Custom HTTP endpoints
 - Environment variable substitution: `{API_KEY}`
 
 ---
 
-## Deployment
+## 📦 Deployment
 
 ### Deploying to Vercel
 
-1. **Push your code to GitHub**
-
-2. **Deploy to Vercel:**
+1. **Push to GitHub:**
    ```bash
-   # Install Vercel CLI
-   npm i -g vercel
-   
-   # Deploy
-   vercel
+   git push origin main
    ```
 
-3. **Set environment variables** in Vercel dashboard:
-   - `NEXT_PUBLIC_CONVEX_URL` (from Convex)
-   - Clerk keys
-   - `FIRECRAWL_API_KEY` (Required)
-   - Optional: Default LLM provider keys
+2. **Deploy to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Add environment variables from `.env.local`
+   - Deploy!
 
-4. **Deploy Convex to production:**
+3. **Deploy Convex to production:**
    ```bash
    npx convex deploy
    ```
-
-5. **Update Clerk settings:**
-   - Add your Vercel domain to allowed origins
-   - Update redirect URLs
 
 ### Environment Variables Checklist
 
 **Required:**
 - `NEXT_PUBLIC_CONVEX_URL` - Convex database
-- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` - Clerk auth
-- `CLERK_SECRET_KEY` - Clerk auth
-- `CLERK_JWT_ISSUER_DOMAIN` - Clerk + Convex integration
 - `FIRECRAWL_API_KEY` - Web scraping
+- `GEMINI_API_KEY` - Primary LLM
+- `AIMLAPI_API_KEY` - Sub-agents
 
-**Optional (can be added in UI instead):**
-- `ANTHROPIC_API_KEY` - Default Claude provider (Recommended for MCP)
-- `OPENAI_API_KEY` - Default gpt-5 provider (MCP coming soon)
-- `GROQ_API_KEY` - Default Groq provider (MCP coming soon)
+**Optional:**
 - `E2B_API_KEY` - Sandboxed code execution
-
-## API Usage
-
-### Programmatic Execution
-
-Generate an API key in **Settings → API Keys**, then:
-
-```bash
-curl -X POST https://your-domain.com/api/workflows/my-workflow-id/execute-stream \
-  -H "Authorization: Bearer sk_live_..." \
-  -H "Content-Type: application/json" \
-  -d '{"url": "https://example.com"}'
-```
-
-**Response:** Server-Sent Events (SSE) stream with real-time updates
-
-## Architecture
 
 ---
 
+## 🎬 Demo
 
-## Project Status & Roadmap
+### Example Workflow: Research → Analysis → Summary
 
-### In Progress
-- **MCP Support for OpenAI & Groq** - Adding native MCP protocol support
-- **OAuth MCP Authentication** - Support for OAuth-based MCP servers
-- **Additional MCP Integrations** - More pre-built MCP server connections
-- **Workflow Sharing** - Public template marketplace
-- **Scheduled Executions** - Cron-based workflow triggers
+1. **Start** – Define research topic
+2. **Firecrawl Search** – Search web for information
+3. **Gemini Agent** – Analyze and extract insights
+4. **AI/ML API Agent** – Create executive summary
+5. **Transform** – Format as structured JSON
+6. **End** – Return final report
 
-### Partial Support
-- **E2B Code Interpreter** - Transform node sandboxing (requires E2B API key)
-- **Complex Loop Patterns** - Nested loops and advanced iteration
-- **Custom Node Types** - Plugin system for community nodes
+**Result:** A complete research report with analysis and summary, fully automated!
 
-### Coming Soon
-- Full MCP support for all LLM providers
-- OAuth authentication for MCP servers
+---
 
-We welcome contributions and PRs to help build these features!
+## 🏆 Hackathon Project
 
-## License
+**Event:** AI Genesis Hackathon 2025  
+**Host:** lablab.ai + /function1  
+**Dates:** November 14-19, 2025  
+**Location:** Hybrid (Online + Festival Arena Dubai)  
+**Team:** Team Aether
 
-This project is licensed under the MIT License 
+### Judging Criteria Alignment
+
+- ✅ **Application of Technology** – Gemini + AI/ML API integration
+- ✅ **Presentation** – Visual workflow builder with real-time execution
+- ✅ **Business Value** – Automates research and analysis workflows
+- ✅ **Originality** – Multi-agent orchestration with visual builder
+
+---
+
+## 📚 Documentation
+
+- [Project Overview](PROJECT_OVERVIEW.md) – Technical architecture
+- [Hackathon Status](HACKATHON_STATUS.md) – Implementation progress
+- [Making It Yours](MAKING_IT_YOURS.md) – Customization guide
+
+---
+
+## 🤝 Acknowledgments
+
+Built on top of [Open Agent Builder](https://github.com/firecrawl/open-agent-builder) by [Firecrawl](https://firecrawl.dev).
+
+Extended and customized for AI Genesis Hackathon 2025 by **Team Aether**.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Star Us
+
+If you find AetherMind useful, please star the repository!
+
+**Built with ❤️ by Team Aether for AI Genesis Hackathon 2025**
+
+---
 
 <div align="center">
 
-**[Star us on GitHub](https://github.com/firecrawl/open-agent-builder)** | **[Try Firecrawl](https://firecrawl.dev)** 
-
-Made with love by the Firecrawl team
+[GitHub](https://github.com/Aaron-T04/AetherMind) • [Issues](https://github.com/Aaron-T04/AetherMind/issues) • [Demo](#demo)
 
 </div>
