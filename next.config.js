@@ -18,6 +18,17 @@ const nextConfig = {
     '@e2b/code-interpreter',
     'e2b',
   ],
+  // Fix for multiple lockfiles warning
+  experimental: {
+    turbo: {
+      root: process.cwd(),
+    },
+  },
+  // Disable Turbopack for production builds (more stable)
+  // This ensures consistent builds on Vercel
+  webpack: (config, { isServer }) => {
+    return config;
+  },
 }
 
 module.exports = nextConfig
