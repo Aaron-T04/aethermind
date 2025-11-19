@@ -33,7 +33,7 @@ export default function RootLayout({
         <html lang="en">
           <head>
             <title>AetherMind – Autonomous AI Workflow Builder</title>
-            <meta name="description" content="Turn prompts into end-to-end autonomous agent pipelines powered by Gemini and AI/ML API" />
+            <meta name="description" content="Turn prompts into end-to-end autonomous agent pipelines powered by Gemini 2.5 Flash and AI/ML API" />
             <link rel="icon" href="/favicon.png" />
             <ColorStyles />
           </head>

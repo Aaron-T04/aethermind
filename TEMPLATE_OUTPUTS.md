@@ -21,7 +21,7 @@ This document explains what each workflow template should output and how the fal
   "workflow": "AetherMind Research → Analysis → Summary",
   "metadata": {
     "researchAgent": "Web Research",
-    "analysisAgent": "Gemini 1.5 Flash",
+    "analysisAgent": "Gemini 2.5 Flash",
     "summaryAgent": "Llama 3.1 70B (AI/ML API)",
     "executionTime": "2025-01-18T12:00:00.000Z"
   }

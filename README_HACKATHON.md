@@ -6,7 +6,7 @@
 
 ## 🎯 Project Overview
 
-**AetherMind** is a visual AI workflow platform that transforms simple prompts into end-to-end autonomous agent pipelines. Built for the AI Genesis Hackathon 2025, it demonstrates how Gemini 1.5 Flash and AI/ML API can work together to create intelligent, multi-agent workflows.
+**AetherMind** is a visual AI workflow platform that transforms simple prompts into end-to-end autonomous agent pipelines. Built for the AI Genesis Hackathon 2025, it demonstrates how Gemini 2.5 Flash and AI/ML API can work together to create intelligent, multi-agent workflows.
 
 ### Key Features
 
@@ -24,7 +24,7 @@
 |-------|-----------|
 | **Frontend** | Next.js 14 (App Router) + Tailwind + shadcn/ui |
 | **Workflow Engine** | Forked Open Agent Builder (React Flow + Convex + Clerk) |
-| **Primary LLM** | **Google Gemini 1.5 Flash** (reasoning, planning, analysis) |
+| **Primary LLM** | **Google Gemini 2.5 Flash** (reasoning, planning, analysis) |
 | **Sub-Agents** | **AI/ML API** (Llama 3.1 70B for summaries, faster calls) |
 | **Web Scraping** | **Firecrawl** (MCP integration) |
 | **Database** | Convex (real-time state management) |
@@ -109,7 +109,7 @@ Start → Firecrawl Search → Gemini Analysis → AI/ML API Summary → Transfo
 
 **What it does:**
 1. **Research** – Uses Firecrawl to search the web for your topic
-2. **Analysis** – Gemini 1.5 Flash analyzes findings and extracts insights
+2. **Analysis** – Gemini 2.5 Flash analyzes findings and extracts insights
 3. **Summary** – AI/ML API (Llama 3.1 70B) creates concise executive summary
 4. **Output** – Structured JSON report for auditability
 
@@ -124,7 +124,7 @@ Start → Firecrawl Search → Gemini Analysis → AI/ML API Summary → Transfo
 ## 🎨 Judging Criteria Alignment
 
 ### ✅ Application of Technology (25 pts)
-- **Gemini 1.5 Flash** – Primary LLM for reasoning and analysis
+- **Gemini 2.5 Flash** – Primary LLM for reasoning and analysis
 - **AI/ML API** – Sub-agents for faster summaries and specialized tasks
 - **Firecrawl** – Web scraping MCP integration for live data
 - **End-to-end integration** – All components work together seamlessly

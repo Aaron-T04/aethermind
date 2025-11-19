@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>Turn prompts into end-to-end autonomous agent pipelines</strong><br>
-  Powered by Gemini 1.5 Flash and AI/ML API
+  Powered by Gemini 2.5 Flash and AI/ML API
 </p>
 
 <div align="center">
@@ -20,7 +20,7 @@
 
 ## 🎯 What is AetherMind?
 
-**AetherMind** is a visual, no-code AI workflow builder that transforms simple prompts into autonomous agent pipelines. Built specifically for the AI Genesis Hackathon 2025, it demonstrates how **Google Gemini 1.5 Flash** and **AI/ML API** can work together to create intelligent, multi-agent workflows.
+**AetherMind** is a visual, no-code AI workflow builder that transforms simple prompts into autonomous agent pipelines. Built specifically for the AI Genesis Hackathon 2025, it demonstrates how **Google Gemini 2.5 Flash** and **AI/ML API** can work together to create intelligent, multi-agent workflows.
 
 ### Perfect for:
 
@@ -42,7 +42,7 @@
 - **MCP protocol support** for extensible tool integration
 
 ### Powered by Gemini & AI/ML API
-- **Gemini 1.5 Flash** – Primary LLM for reasoning, planning, and analysis
+- **Gemini 2.5 Flash** – Primary LLM for reasoning, planning, and analysis
 - **AI/ML API** – Sub-agents using Llama 3.1 70B, Flux, and more
 - **Multi-agent orchestration** – Different models for different tasks
 - **Cost-optimized** – Use the right model for each job
@@ -62,7 +62,7 @@
 |-------|-----------|
 | **Frontend** | Next.js 14 (App Router) + Tailwind + shadcn/ui |
 | **Workflow Engine** | LangGraph (workflow orchestration) |
-| **Primary LLM** | **Google Gemini 1.5 Flash** (reasoning, planning, analysis) |
+| **Primary LLM** | **Google Gemini 2.5 Flash** (reasoning, planning, analysis) |
 | **Sub-Agents** | **AI/ML API** (Llama 3.1 70B, Llama 3.1 8B, Flux 1.1 Pro) |
 | **Web Scraping** | **Firecrawl** (MCP integration) |
 | **Database** | Convex (real-time state management) |
@@ -138,7 +138,7 @@ Start → Firecrawl Search → Gemini Analysis → AI/ML API Summary → Transfo
 
 **What it does:**
 1. **Research** – Uses Firecrawl to search the web for your topic
-2. **Analysis** – Gemini 1.5 Flash analyzes findings and extracts insights
+2. **Analysis** – Gemini 2.5 Flash analyzes findings and extracts insights
 3. **Summary** – AI/ML API (Llama 3.1 70B) creates concise executive summary
 4. **Output** – Structured JSON report for auditability
 
@@ -230,7 +230,7 @@ Add custom MCP servers in Settings → MCP Registry:
 
 1. **Start** – Define research topic
 2. **Firecrawl Search** – Search web for information
-3. **Gemini Agent** – Analyze and extract insights
+3. **Gemini 2.5 Flash Agent** – Analyze and extract insights
 4. **AI/ML API Agent** – Create executive summary
 5. **Transform** – Format as structured JSON
 6. **End** – Return final report

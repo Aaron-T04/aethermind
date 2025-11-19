@@ -13,7 +13,7 @@ const templates: Record<string, Workflow> = {
   'aethermind-research-analysis-summary': {
     id: 'aethermind-research-analysis-summary',
     name: 'AetherMind: Research → Analysis → Summary',
-    description: 'Autonomous workflow: Research web data, analyze findings with Gemini, summarize with AI/ML API, output structured JSON',
+    description: 'Autonomous workflow: Research web data, analyze findings with Gemini 2.5 Flash, summarize with AI/ML API, output structured JSON',
     category: 'AetherMind',
     tags: ['aethermind', 'research', 'analysis', 'gemini', 'hackathon'],
     difficulty: 'intermediate',
@@ -53,7 +53,7 @@ Demonstrates:
 3. AI/ML API Summary (Sub-agent)
 4. Structured JSON Output
 
-Powered by Gemini 1.5 Flash + AI/ML API`,
+Powered by Gemini 2.5 Flash + AI/ML API`,
         },
       },
       {
@@ -174,7 +174,7 @@ const result = {
   workflow: "AetherMind Research → Analysis → Summary",
   metadata: {
     researchAgent: "Web Research",
-    analysisAgent: "Gemini 1.5 Flash",
+    analysisAgent: "Gemini 2.5 Flash",
     summaryAgent: "Llama 3.1 70B (AI/ML API)",
     executionTime: new Date().toISOString()
   }
